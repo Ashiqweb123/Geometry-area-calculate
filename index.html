@@ -26,12 +26,13 @@
                     <figure><img src="images/triangle.png" alt="Triangle" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
-                        <p>Area= 0.5 X Length X Breadth</p>
+                        <p>Area= 0.5 X Length X Height</p>
                         <p>
-                            <input type="text" class="mb-5 ml-3" placeholder="Length"><span>cm</span>
-                            <input type="text" class="mb-5 ml-3" placeholder="Breadth"><span>cm</span>
+                            <input id="base-field" type="text" class="mb-5 ml-3" placeholder="Length"><span>cm</span>
+                            <input id="height-field" type="text" class="mb-5 ml-3" placeholder="height"><span>cm</span>
+                            <p>Area:<span id="triangle-area"> 0 </span>cm<sup>2</sup></p>
                         </p>
-                        <button class="btn btn-primary">Calculate</button>
+                        <button onclick="triangleCalculate()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
                 <!-- Second-card -->
@@ -57,7 +58,7 @@
                             <input type="text" class="mb-5 ml-3" placeholder="width"><span>cm</span>
                             <input type="text" class="mb-5 ml-3" placeholder="height"><span>cm</span>
                         </p>
-                        <button class="btn btn-primary">Calculate</button>
+                        <button class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
                
@@ -73,6 +74,10 @@
     <footer>
 
     </footer>
+
+    <!-- js-link -->
+    <script src="script/area-calculate.js"></script>
+    <!-- js-link -->
 </body>
 
 </html>
