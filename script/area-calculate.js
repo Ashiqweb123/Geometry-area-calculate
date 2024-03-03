@@ -15,3 +15,23 @@ function triangleCalculate()
     const triangleAreaSpan=document.getElementById('triangle-area')
     triangleAreaSpan.innerText=area;
 }
+function rectangleCalculate()
+{
+    //length-field
+    const lengthField=document.getElementById('length-field')
+    const lengthFieldValue=lengthField.value
+    const lengthFieldNum=parseFloat(lengthFieldValue)
+   
+    lengthField.value=''
+    // Width-field
+
+    const widthField=document.getElementById('width-field')
+    const widthFieldValue=widthField.value
+    const widthFieldNum=parseFloat(widthFieldValue)
+    widthField.value=''
+
+    //calculate-area
+    const area=lengthFieldNum*widthFieldNum
+    const rectArea=document.getElementById('Rectangle-area')
+    rectArea.innerText=area;
+}
