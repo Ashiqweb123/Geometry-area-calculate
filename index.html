@@ -49,8 +49,36 @@
                         <button onclick="rectangleCalculate()" class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
+                  <!-- paralleograme-card -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="rect" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">paralleograme</h2>
+                        <p>Area= Base X height</p>
+                        <p>
+                            <input id="para-base" type="text" class="mb-5 ml-3" placeholder="Base"><span>cm</span>
+                            <input id="para-height" type="text" class="mb-5 ml-3" placeholder="Height"><span>cm</span>
+                            <p>Area:<span id="paralleograme-area"> 0 </span>cm<sup>2</sup></p>
+                        </p>
+                        <button onclick="paralleogrameCalculate()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
+                  <!-- ellipse-card -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/ellipse.png" alt="ellipse" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area= 3.1416X major X minor</p>
+                        <p>
+                            <input id="major-radius" type="text" class="mb-5 ml-3" placeholder="major-radius"><span>cm</span>
+                            <input id="minor-radius" type="text" class="mb-5 ml-3" placeholder="minor-radius"><span>cm</span>
+                            <p>Area:<span id="Ellipse-area"> 0 </span>cm<sup>2</sup></p>
+                        </p>
+                        <button onclick="ellipseCalculate()" class="btn btn-primary w-full">Calculate</button>
+                    </div>
+                </div>
                 <!-- Second-card -->
-                <div class="card w-96 bg-base-100 shadow-xl">
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/parallelogram.png" alt="Parallelogram" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Parallelogram</h2>
@@ -75,7 +103,7 @@
                         <button class="btn btn-primary w-full">Calculate</button>
                     </div>
                 </div>
-               
+                -->
         </div>
 
         <!-- area-calculator -->

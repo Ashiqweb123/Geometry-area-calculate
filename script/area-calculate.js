@@ -35,3 +35,39 @@ function rectangleCalculate()
     const rectArea=document.getElementById('Rectangle-area')
     rectArea.innerText=area;
 }
+
+
+//functional----> reduce reusable code
+
+   function paralleogrameCalculate()
+   {
+    const paraBase=getInput('para-base');
+    console.log(paraBase)
+    const paraHeight=getInput('para-height')
+    console.log(paraHeight)
+    const paraArea=paraBase*paraHeight;
+    setElementText('paralleograme-area',paraArea)
+   }
+
+
+   function ellipseCalculate()
+   {
+    const majorRadius=getInput('major-radius')
+    const minorRadius=getInput('minor-radius')
+    const ellpseArea=3.1416*majorRadius*minorRadius
+    setElementText('Ellipse-area',ellpseArea)
+   }
+   function getInput(field)
+   {
+    const inputField=document.getElementById(field);
+    const inputText=inputField.value;
+    const inputValue=parseFloat(inputText);
+    return inputValue;
+   }
+
+   function setElementText(element,area)
+   {
+    const elementArea=document.getElementById(element)
+    elementArea.innerText=area;
+
+   }
