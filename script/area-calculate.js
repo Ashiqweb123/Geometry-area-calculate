@@ -47,6 +47,7 @@ function rectangleCalculate()
     console.log(paraHeight)
     const paraArea=paraBase*paraHeight;
     setElementText('paralleograme-area',paraArea)
+    addToCalculationEntry('parallegrame',paraArea)
    }
 
 
@@ -55,7 +56,9 @@ function rectangleCalculate()
     const majorRadius=getInput('major-radius')
     const minorRadius=getInput('minor-radius')
     const ellpseArea=3.1416*majorRadius*minorRadius
-    setElementText('Ellipse-area',ellpseArea)
+    const areaDecimal=ellpseArea.toFixed(2)
+    setElementText('Ellipse-area',areaDecimal)
+    addToCalculationEntry('Ellipse',areaDecimal)
    }
    function getInput(field)
    {
@@ -70,4 +73,14 @@ function rectangleCalculate()
     const elementArea=document.getElementById(element)
     elementArea.innerText=area;
 
+   }
+
+   function addToCalculationEntry(areaType,area)
+   {
+    console.log(areaType + ' ' + area)
+    const calculateEntry=document.getElementById('calculate-entry')
+    const count=calculateEntry.childElementCount
+    const p=document.createElement('p')
+    p.innerHTML =` ${count}. ${areaType} ${area} cm<sup>2</sup>`
+    calculateEntry.appendChild(p)
    }
